@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jersey+15&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    font-weight: 6 00;
+    font-style: normal;
+    box-sizing: border-box;
+      
+
+}
+
+.container{
+    width: 100%;
+    background: bisque;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.todo-app img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.todo-app{
+    background-color: white;
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    border-radius: 10px;
+    padding: 40px 30px 70px;  
+
+}
+
+.todo-app h2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(220, 220, 220);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+.row input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    
+}
+
+.row button{
+    background-color: orangered;
+    color: white;
+    border:none;
+    outline: none;
+    border-radius: 50px;
+    padding: 16px 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+ul li{
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    color: rgb(5, 1, 1);
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    position: relative ;
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li::before{
+content: '';
+background: url(assests/unchecked.jpeg);
+background-size: cover;
+background-position: center;
+position: absolute;
+top: 12px;
+left: 8px;
+height: 28px;
+width: 28px;
+border-radius: 50%;
+
+}
+ul li.checked{
+    color: red;
+    
+    
+}
+
+ul li span:hover{
+    background: red;
+    color: black ;
+    
+}
